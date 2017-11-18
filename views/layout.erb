@@ -4,11 +4,12 @@
   <title><%= @title %></title>
 </head>
 <body>
-  
+
+  <!-- we inject a naviagtion partial here  -->
    <%= erb(:'partials/navigation', :layout => false) %>
-  
+
    <!-- our template content will be injected here -->
    <%= yield %>
-
+   
 </body>
 </html>
