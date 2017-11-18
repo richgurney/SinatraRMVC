@@ -29,7 +29,7 @@ class Post
 
 
   def self.all
-
+    # Assign the Postgre connect to variable
     conn = self.open_connection
 
     sql = "SELECT id,title,body FROM post ORDER BY id"
